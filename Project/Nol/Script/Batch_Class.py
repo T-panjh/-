@@ -13,6 +13,7 @@ import imaplib
 import paramiko
 import requests
 
+from ras_Encrypt.py import Encrypt
 #添加路径,用于调用模块,以及putfile方法调用的localpath
 sys.path.append('C:/Users/周易人/Desktop/Git/Project/Nol/Script')
 
