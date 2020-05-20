@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8be9cb36-f0c0-4586-85f0-93f886a0325d" name="Default Changelist" comment="" />
+    <list default="true" id="49a73d56-0327-42fb-af57-e7250b1e3f44" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../WeChat/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WeChat/男女比例.py" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,7 +12,20 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scripy/DebugLib.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3050">
+              <caret line="122" column="7" selection-start-line="122" selection-start-column="7" selection-end-line="122" selection-end-column="7" />
+              <folding>
+                <element signature="e#65#87#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -24,15 +40,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/男女比例.py" />
+        <option value="$PROJECT_DIR$/scripy/mysql.connect.py" />
+        <option value="$PROJECT_DIR$/scripy/Batch_db.py" />
+        <option value="$PROJECT_DIR$/scripy/DebugLib.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="520" />
-    <option name="y" value="49" />
+    <option name="x" value="387" />
     <option name="width" value="1221" />
-    <option name="height" value="1057" />
+    <option name="height" value="1058" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -40,13 +57,28 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Nol" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Nol" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Nol" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Nol" type="462c0819:PsiDirectoryNode" />
+              <item name="scripy" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Nol" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -68,24 +100,25 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8be9cb36-f0c0-4586-85f0-93f886a0325d" name="Default Changelist" comment="" />
-      <created>1589531894236</created>
+      <changelist id="49a73d56-0327-42fb-af57-e7250b1e3f44" name="Default Changelist" comment="" />
+      <created>1589805469695</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1589531894236</updated>
-      <workItem from="1589531895599" duration="787000" />
-      <workItem from="1589631622486" duration="491000" />
-      <workItem from="1589805015034" duration="451000" />
+      <updated>1589805469695</updated>
+      <workItem from="1589805471102" duration="5969000" />
+      <workItem from="1589851694367" duration="8783000" />
+      <workItem from="1589943782675" duration="939000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1729000" />
+    <option name="totallyTimeSpent" value="15691000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="520" y="49" width="1221" height="1057" extended-state="0" />
+    <frame x="387" y="0" width="1221" height="1058" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.16020672" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25839794" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -112,8 +145,15 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/男女比例.py">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/scripy/DebugLib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3050">
+          <caret line="122" column="7" selection-start-line="122" selection-start-column="7" selection-end-line="122" selection-end-column="7" />
+          <folding>
+            <element signature="e#65#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
