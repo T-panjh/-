@@ -167,8 +167,8 @@ class Batch_csv():
             x =i.get('contract_no','err')
 
 if __name__=='__main__':
-    x  = Batch_db.query("select * from %s" %'tablename')
-    b = Batch_csv('filename')
+        x  = Batch_db.query("select * from %s" %'tablename')
+        b = Batch_csv('filename')
 
 
 

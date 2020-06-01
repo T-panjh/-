@@ -13,7 +13,7 @@ import imaplib
 import paramiko
 import requests
 
-from ras_Encrypt.py import Encrypt
+from Script.ras_Encrypt import Encrypt
 #添加路径,用于调用模块,以及putfile方法调用的localpath
 sys.path.append('C:/Users/周易人/Desktop/Git/Project/Nol/Script')
 
@@ -119,6 +119,7 @@ class Batch_File():
             'result':'pass'
         }
 
+
 class PL_NOL():
     def __init__(self):
         pass
@@ -129,7 +130,7 @@ class PL_NOL():
         cls.proxies = {'http':'10.129.53.74:8888','https':'10.129.53.74:8888'}#代理ip，https为新增数据加密版本的http通讯协议
         cls.proxies = {'http':None,'https':None}
 
-        cls.sess = requests.sessions()#cookie数据存放在客户的浏览器上，session数据放在服务器上
+        cls.sess = requests.session()#cookie数据存放在客户的浏览器上，session数据放在服务器上
 
         loginkey_header = {
             'Accept':'pplication/json, text/plain, */*'
@@ -154,8 +155,69 @@ class PL_NOL():
 
                 key = res.json()
                 en = Encrypt(exponent = key['exponent'],modulus = key['modulus'])
+                password =en.encrypt(password_msg)
 
+                login_data = 'username={0}&password={1}'.format(username,password)\
 
+                my_header ={
+                    'Content-Type':'application/x-www-form-urlencoded',
+                    'Accept':'pplocation/json, text/plain, */*'
+                }
 
+                try:
+                    rsp = cls.sess.post(cls.addr+'/DemoMaster/login',
+                                        headers=loginkey_header,
+                                        timeout=(120, 120),
+                                        proxies=cls.proxies,
+                                        verify=False, allow_redirects=True)  # 避免ssl认证并启动重定向
+                    print(rsp.text)
+                except Exception as ex:
+                    print('error:{0}'.format(ex))
+                else:
+                    if rsp.text !='':
+                        print('error:{0}'.format(rsp.text))
+                        cls.sess =None
+            else:
+                print(res.json())
+                cls.sess =None
+
+    @classmethod
+    def logout(cls):
+        cls.sess = requests.session()
+
+        cls.sess.get(url=cls.addr +'/DemoMaster/logout',proxies=cls.proxies,verify=False)
+
+    @classmethod
+    def runjob(cls,**args):
+        pass
+        #
+        # res = ''
+        # rtmsg =dict()
+        #
+        # cls.login()
+        #
+        # if cls.sess is None:
+        #     rtmsg['result'] = 'Failed'
+        #     rtmsg['action'] = '用户登陆失败'
+        #     return rtmsg
+        # rundata ={
+        #     'jobName' :args.pop('jobname'),
+        #     'key':','.join(args.keys()),
+        #     'values':','.join(args.values())
+        # }
+        # my_header = {
+        #     'Content-Type':'application/x-www-form-urlencoded',
+        #     'Accept':'pplication/json,text/plain,*/*'
+        # }
+        #
+        # try:
+        #     rsp = cls.sess.post(cls.addr + '/DemoMaster/batch/launch',
+        #                         headers=rundata,
+        #                         timeout=(120, 120),
+        #                         proxies=cls.proxies,
+        #                         verify=False, allow_redirects=True)  # 避免ssl认证并启动重定向
+        #
+        #
+        #
 
 
